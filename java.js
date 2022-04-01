@@ -196,3 +196,112 @@
 
  const array1 = [1, 30, 4, 21, 100000, 99];
  console.log(array1.sort());
+
+
+ function sum(a,b){
+   var total = a+b;
+  console.log(total);
+ }
+
+ var funExp = sum(5,15);
+console.log(funExp);
+
+
+ var funExp = function(a,b){
+   return total = a+b;
+ }
+
+ var sum = funExp(15,15);
+ var sum1 = funExp(20,15);
+
+console.log(sum>sum1);
+
+var myName = "Ronak Garala";
+ console.log(myName);
+
+ myName = "Garala Ronak";
+ console.log(myName);
+
+ let myName = "Ronak Garala";
+ console.log(myName);
+
+ myName = "Garala Ronak";
+ console.log(myName);
+
+ const myName = "Garala Ronak";
+ console.log(myName);
+
+ myName = "Garala Ronak";
+ console.log(myName);
+
+
+
+ function biodata() {
+   const myFirstName = "Garala Ronak";
+   console.log(myFirstName);
+
+   if(true){
+     const myLastName = "Ronak";
+   }
+
+ console.log('innerOuter ' + myLastName);
+}
+ console.log(myFirstName);
+
+ biodata();
+
+//for table
+
+for(let num = 1; num<= 10; num++){
+     let tableOf = 12;  
+ console.log(tableOf + " * " + num + " = " + tableOf * num);
+ console.log( ` ${tableOf} * ${num} = ${tableOf * num}` );
+
+ 
+ function mult(a,b=5){
+   return a*b;
+}
+ console.log(mult(3));
+
+ const myBioData = ['Garala', 'Ronak', 26];
+
+  let myFName = myBioData[0];
+  
+ let myLName = myBioData[1];
+   let myAge = myBioData[2];
+   let [myFName,myAge, myLName] = myBioData;
+ console.log(myAge);
+ 
+ const myBioData = {
+    myFname : 'Ronak',
+     myLname : 'Garala',
+     myAge : 26
+   }
+
+  let age = myBioData.age;
+   let myFname = myBioData.myFname;
+
+  let {myFname,myLname,myAge, myDegree="MCS"} = myBioData;
+   console.log(myLname);
+ 
+ 
+  let myName = "Ronak Garala";
+       const myBio = {
+         [myName] : "hello how are you?",
+         [20 + 6] : "is my age"
+      }
+
+       console.log(myBio);";
+       const myBio = {
+         [myName] : "hello how are you?",
+         [20 + 6] : "is my age"
+       }
+
+      console.log(myBio);
+ 
+  let myName = "Ronak Garala";
+   let myAge = 26;
+
+   const myBio = {myName,myAge}
+
+  console.log(myBio);
