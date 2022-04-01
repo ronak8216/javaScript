@@ -305,3 +305,207 @@ for(let num = 1; num<= 10; num++){
    const myBio = {myName,myAge}
 
   console.log(myBio);
+
+ console.log(sum()); 
+
+ function sum() {
+   let a = 5; b = 6;
+   let sum = a+b;
+  return `the sum of the two number is ${sum}`;
+ }
+ 
+  const sum = () => `the sum of the two number is ${(a=5)+(b=6)}`;
+
+ console.log(sum());
+ 
+ const colors = ['red', 'green', 'blue', 'white', 'pink'];
+const isPresent = colors.includes('purple');
+ console.log(isPresent);
+ 
+ console.log(2**3)
+ console.log(Math.pow(2,3));
+ 
+ 
+ const message = "my name is invalid ??";
+console.log(message);
+ console.log(message.padStart(5));
+ console.log(message.padEnd(10));
+ 
+ const person = { name: 'Friend', age: 22 };
+
+ console.log( Object.values(person) );
+ const ar =  Object.entries(person);
+ console.log(Object.fromEntries(ar));
+ 
+  var myarray = ['ronak',21,male,'virat',34,male,'anushka',true, 52];
+ console.log(myarray[myarray.length - 1]);
+ console.log(myarray[myarray.length);
+ 
+ var myarray = ['ronak',21,male,'virat',34,male,'anushka',true, 52];
+ for(var i=0; i<myarray.length; i++){
+   console.log(myarray[i]);
+ }
+ 
+ for(let elements in myarray){
+   console.log(elements);
+ }
+ 
+ 
+ myarray.forEach(function(element, index, array) {
+       console.log(element + " index : " +
+         index + " " + array);
+ });
+ 
+ myarray.forEach((element, index, array) => {
+  console.log(element + " index : " +
+     index + " " + array);
+  
+ }
+                 
+   console.log(myarray.indexOf("male", 3));
+ 
+ 
+ console.log(myarray.lastIndexOf("male", 3));
+ 
+ console.log(myFriendNames.includes("ronak"));
+ 
+ const price=[1,2,3,4,5];
+ const ele=price.find((current)=>current>4);
+ console.log(ele);
+ 
+ 
+ const newPriceTag = price.filter((elem, index) => {
+   return elem > 4;
+ })
+ console.log(newPriceTag);
+ 
+ console.log(price.sort());
+ 
+ var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+ let aFruits = fruits.sort();
+ 
+ fruits.push("juis");
+ fruits.unshift("gwawa");
+ console.log(fruits);
+ 
+ 
+ const plants = ['broccoli', 'cauliflower',  'kale', 'tomato', 'cabbage'];
+ console.log(plants);
+ console.log(plants.pop());
+ console.log(plants);
+console.log(plants.shift());
+ 
+ 
+ const arr = [
+       ['a_1', 'a_2'],
+         ['a_3', 'a_4'],
+         ['a_5', 'a_6'],
+         ['a_7', ['a_7', ['a_7', 'a_8']]]
+     ];
+
+ let f = arr.reduce((accum, currVal)  => { 
+           return accum.concat(currVal);
+ })
+
+ console.log(arr.flat(Infinity));
+
+ console.log(f);
+
+
+
+ const myname =  'I am Ronak';
+ console.log(myname.lastIndexOf("R"));
+
+
+ var str = ["Apple, Bananaa, Kiwi, mango"];
+
+ let res = str.slice(0,7);
+ console.log(res);
+ let res = str.slice(3);
+ console.log(res);
+
+ var str = "Apple, Bananaa, Kiwi";
+ let res = str.substring(str.length()-1,-2);
+ console.log(res);
+
+
+let name = "virat kohli";
+
+ console.log(name.charAt(9));
+ console.log(name.toUpperCase()); 
+ console.log(name.toLowerCase());
+
+ var stringg = "              Hello         welcome   guys!            ";
+ console.log(string.trim());
+
+ let todaysDate = new Date(); 
+ console.log(todaysdate);
+
+ console.log(new Date());
+ console.log(new Date().toLocaleString()); 
+ console.log(new Date().toString()); 
+
+ console.log(Date.now());
+
+
+ console.log(todaysDate.toLocaleString());
+ console.log(todaysDate.getFullYear());
+ console.log(todaysDate.getMonth());
+ console.log(todaysDate.getDate());
+ console.log(todaysDate.getDay());
+
+ const currTime = new Date();
+
+ console.log(currTime.getTime());
+ console.log(currTime.getMinutes());
+ console.log(currTime.getSeconds());
+ console.log(currTime.getMilliseconds());
+
+
+
+//About MAth Functin like Round,pow,etc................................//
+
+ console.log(Math.PI);
+
+ let s = 55.531;
+ console.log(Math.round(s));
+
+
+ console.log(Math.pow(2,3));
+ console.log(2**3);
+
+
+ console.log(Math.sqrt(25));
+ console.log(Math.abs(-2));
+ console.log(Math.abs(4-23));
+
+ console.log(Math.round(6.1));
+
+ console.log(Math.floor(49.1)); 
+
+ console.log(Math.min(12220, 1500, 302, 120, -82, -2002));
+
+
+ console.log(Math.max(12220, 1500, 302, 120, -82, -2002));
+
+ console.log(Math.floor(Math.random()*10));
+
+
+ console.log(Math.trunc(-3.1));
+
+
+   let bioData = { 
+       myName : "Virat Kohli ",
+       myAge : 34,
+      getData : function(){
+         console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+       }
+   }
+
+   bioData.getData();
+ 
+
+
+ 
+ 
