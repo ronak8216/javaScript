@@ -505,6 +505,141 @@ let name = "virat kohli";
 
    bioData.getData();
  
+  let bioData = { 
+   myName : {
+    myNames : "Virat Kohli ",
+
+   },
+   myAge : 34,
+   getData (){
+     console.log(`My name is ${bioData.myName} and my age is ${bioData.myAge}`);
+   }/ }
+
+ console.log(bioData.myName.realNames );
+
+
+ 
+ console.log(this.alert('use of alert  by this ....'));
+
+
+ function Names() {
+     console.log(this);
+ }
+
+
+ const obj = {
+     myAge : 34,
+     myNames : () => {
+       console.log(this);
+     }
+ }
+ obj.myNames();
+
+
+
+
+ const addtwonum = (a,b) => {
+     return a+b;
+ }
+ 
+ console.log(addtwonum(5,2));
+
+ const substraction = (a,b) => {
+     return Math.abs(a-b);
+ }
+  const multiplication = (a,b) => {
+     return a*b;
+ }
+
+ const calculator = (num1,num2, operator) => {
+   return operator(num1,num2);
+ }
+
+ calculator(5,2,subs)
+ console.log(calculator(5,2,subs));
+ console.log(calculator(2,3,add));
+ console.log(calculator(5,4,subs));
+ console.log(calculator(10,6,mult));
+
+
+
+ const virat = () => {
+   console.log(`virat playing very well`);
+   virat1();
+   console.log(`virat playing very well Again `);
+ }
+
+  virat();
+
+ const virat2 = () => {
+   setTimeout(()=> {
+                    console.log(`Function 2️  is called when time is 800 milisecond`);
+   }, 800);
+ }
+
+
+
+ let a = "Hello..."; 
+
+ const first1= () => {
+     let b = " How are you?"
+ 
+     const first2 = () => {
+       let c = " hello and welcome,if not then byby  .....";
+       console.log(a+b+c);
+     }
+     first2();
+    
+ }
+
+ first1();
+
+
+
+ const sum = (num1) => (num2) => (num3) => console.log(num1+num2+num3); 
+
+ sum(5)(3)(8);
+
+
+ setTimeout(()=>{
+     console.log(`its all about of first`);
+     setTimeout(()=>{
+         console.log(`its all about of second`);
+         setTimeout(()=>{
+             console.log(`its all about of 3rd`);
+             setTimeout(()=>{
+                 console.log(`its all about of 4th`);
+                 setTimeout(()=>{
+                     console.log(`its all about of 5th`);
+                     setTimeout(()=>{
+                         console.log(` works is done`);    
+                     }, 1000) 
+                 }, 500)   
+             }, 300)  
+         }, 400)   
+     }, 200)
+ }, 800)
+
+
+
+ var object = { key_1: "some text", key_2: true, key_3: 10 };
+
+ var object_as_string = JSON.stringify(object);  
+ "{"key_1":"some text","key_2":true,"key_3":10}" 
+ 
+  var object_as_string_as_object = JSON.parse(object_as_string); 
+
+
+ console.log(object_as_string);
+
+ console.log(typeof(object_as_string)); 
+
+console.log(typeof(object_as_string_as_object));
+
+
+ ;  
+
+ 
 
 
  
